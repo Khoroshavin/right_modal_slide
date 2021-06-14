@@ -1,3 +1,4 @@
+/* ! to delete */
 .container {
   height: 100vh;
   margin: 0 auto;
@@ -41,11 +42,10 @@ body {
   font-family: 'Bosch Sans';
 }
 
-/* * {
+* {
   padding: 0;
   margin: 0;
-  line-height: 1;
-} */
+}
 
 a {
   text-decoration: none;
@@ -59,6 +59,8 @@ a:hover {
 
 .slide__modal_link {
   display: flex;
+  position: relative;
+  color: #fff;
 }
 
 .slide__modal img {
@@ -66,11 +68,9 @@ a:hover {
 }
 
 .slide__modal {
-  /* width: 200px; */
   height: 184px;
   position: absolute;
   top:50%;
-  right: -160px;
   transform:translateY(-50%);
   transition: .3s;
   -webkit-transition: .3s;
@@ -79,18 +79,28 @@ a:hover {
   -o-transition: .3s;
 }
 
-/* .slide__modal_open {
-  right: 0px;
+.slide__modal_close {
+  cursor: pointer;
+  right: -160px;
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -ms-transition: .3s;
   -o-transition: .3s;
-} */
-
-.slide__modal:hover {
-  right: 0px;
 }
+
+.slide__modal_open {
+  right: 0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+/* .slide__modal:hover {
+  right: 0px;
+} */
 
 .slide__modal .left {
   /* width: 201px; */
@@ -116,10 +126,6 @@ a:hover {
   left: 0;
 }
 
-.left .top  {
-  /* display: inline-block; */
-}
-
 .left .top,
 .left .bot {
   transform: rotate(-90deg);
@@ -130,7 +136,6 @@ a:hover {
 }
 
 .percent {
-  /* padding-top: 2px; */
   font-size: 28px;
   font-weight: 700;
   line-height: 1;
@@ -158,7 +163,6 @@ a:hover {
 
 .akce {
   margin-top: 10px;
-  /* padding-top: 5px; */
   line-height: 1;
   text-align: center;
   font-weight: normal;
@@ -172,13 +176,16 @@ a:hover {
   max-height: 182px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   background-color: #fff;
+}
+
+.right__img {
+  width: 75%;
 }
 
 .right__offer {
   margin: 10px;
-  /* line-height: 1.44; */
   font-weight: normal;
   text-align: right;
   color: #000;
@@ -201,4 +208,21 @@ a:hover {
 .akce_two {
   margin: 0;
   padding-top: 2px;
+}
+
+.slide__btn_close {
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  right: 10px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slide__btn_close img {
+  width: 100%;
 }
