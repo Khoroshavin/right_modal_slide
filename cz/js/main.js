@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () =>{
   const slideModalLeft = document.querySelector('.left');
 
   function openSlideModal() {
-    slideModal.classList.toggle("slide__modal_open");
+    if (!slideModal.classList.contains('slide__modal_open')) {
+      slideModal.classList.toggle("slide__modal_open");
+    }
+
   }
 
   function closeSlideModal() {
