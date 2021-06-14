@@ -80,7 +80,6 @@ a:hover {
 }
 
 .slide__modal_close {
-  cursor: pointer;
   right: -160px;
   transition: .3s;
   -webkit-transition: .3s;
@@ -98,13 +97,8 @@ a:hover {
   -o-transition: .3s;
 }
 
-/* .slide__modal:hover {
-  right: 0px;
-} */
 
 .slide__modal .left {
-  /* width: 201px; */
-  /* height: 457px; */
   height: 184px;
   width: 80px;
   background: url(../img/left_201x457.png) no-repeat;
@@ -112,6 +106,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 .left .top {
@@ -192,7 +187,6 @@ a:hover {
 }
 
 .use_akce {
-  /* margin: 0 10px 10px; */
   width: 140px;
   margin: 0 10px 10px;
   height: 60px;
