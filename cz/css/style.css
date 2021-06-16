@@ -1,6 +1,6 @@
 /* ! to delete */
 .container {
-  height: 100vh;
+  height: 400vh;
   margin: 0 auto;
   max-width: 1200px;
   background-color: cadetblue;
@@ -69,7 +69,7 @@ a:hover {
 
 .slide__modal {
   height: 184px;
-  position: absolute;
+  position: fixed;
   top:50%;
   transform:translateY(-50%);
   transition: .3s;
